@@ -61,7 +61,7 @@ public class User implements Serializable {
         return Address;
     }
 
-    public void setAddress(String Address) {
+    public void setAddress(String address) {
         this.Address = Address;
     }
 
