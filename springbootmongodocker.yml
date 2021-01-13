@@ -14,7 +14,7 @@ spec:
         app: springapp
     spec:
       containers:
-      - image: deviprasaddev/spring-boot-mongo-docker:${BUILD_NUMBER}
+      - image: deviprasaddev/spring-boot-mongo-docker:37
         name: springappcontainer
         ports:
         - name: springapp
