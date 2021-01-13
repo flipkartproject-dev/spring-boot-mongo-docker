@@ -26,7 +26,7 @@ public class UserController {
     @PostMapping(value = "/save")
     public String save(@RequestParam("firstName") String firstName,
                        @RequestParam("lastName") String lastName,
-                       @RequestParam("Address") String Address,
+                       @RequestParam("Address") String address,
                        @RequestParam("email") String email) {
 
     	logger.info("Creating user name: "+firstName);
