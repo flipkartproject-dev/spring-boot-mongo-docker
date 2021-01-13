@@ -23,13 +23,13 @@ public class User implements Serializable {
     private String id;
     private String firstName;
     private String lastName;
-    private String Address;
+    private String address;
     private String email;
 
     public User(String firstName, String lastName, String address, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
-	this.Address = Address;
+	this.Address = address;
         this.email = email;
     }
 
@@ -57,12 +57,12 @@ public class User implements Serializable {
         this.lastName = lastName;
     }
 	
-    public String getAddress() {
-        return Address;
+    public String getaddress() {
+        return address;
     }
 
-    public void setAddress(String address) {
-        this.Address = Address;
+    public void setaddress(String address) {
+        this.address = address;
     }
 
     public String getEmail() {
@@ -81,12 +81,12 @@ public class User implements Serializable {
         return Objects.equals(id, user.id) &&
                 Objects.equals(firstName, user.firstName) &&
                 Objects.equals(lastName, user.lastName) &&
-		Objects.equals(Address, user.Address) &&
+		Objects.equals(address, user.address) &&
                 Objects.equals(email, user.email);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, firstName, lastName, Address, email);
+        return Objects.hash(id, firstName, lastName, address, email);
     }
 }
